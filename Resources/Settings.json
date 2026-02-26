@@ -1,0 +1,18 @@
+{
+    "Endpoints": {
+        "AuthUri": "https://id.truesec.app/oauth/token",
+        "BaseAppUri": "https://api.soc.truesec.app",
+        "Workspaces": "https://api.soc.truesec.app/workspaces",
+        "Incidents": "https://api.soc.truesec.app/workspaces/{workspaceId}/incidents",
+        "CyberExposureProfiles": "https://api.soc.truesec.app/workspaces/{workspaceId}/cyberexposureprofiles",
+        "Operations": "https://api.soc.truesec.app/workspaces/{workspaceId}/operations/{operationId}",
+        "Vulnerability": "https://api.soc.truesec.app/workspaces/{workspaceId}/vulnerabilities",
+        "ThreatEvent": "https://api.soc.truesec.app/workspaces/{workspaceId}/threatevents"
+    },
+    "Session": {
+        "WorkspaceConfigured": false,
+        "ApiCredentials": null,
+        "AccessToken": null,
+        "AccessTokenCreated": null
+    }
+}
