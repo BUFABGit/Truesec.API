@@ -56,7 +56,7 @@ Import-Module .\Truesec.API.psd1
 $Credential = Get-Credential
 
 # Connect to the API
-Connect-TSAPI -Credential $Credential
+Connect-TruesecAPI -Credential $Credential
 ```
 
 #### Connect using the 1password CLI
@@ -65,7 +65,7 @@ Connect-TSAPI -Credential $Credential
 Import-Module .\Truesec.API.psd1
 
 # Connect to the API where APIKeyName is the name of the entry in 1password holding your API credentials. Exact match is expected.
-Connect-TSAPI -APIKeyName "Truesec API credentials"
+Connect-TruesecAPI -APIKeyName "Truesec API credentials"
 ```
 
 #### Connect using KeePass 2
@@ -76,10 +76,10 @@ Import-Module .\Truesec.API.psd1
 
 # Connect to the API where APIKeyName is the name of the entry in 1password holding your API credentials.
 # The KeePassDB parameter expect an exact path to your database file.
-Connect-TSAPI -APIKeyName "Truesec API credentials" -KeePassDB "C:\Temp\Database.kdbx"
+Connect-TruesecAPI -APIKeyName "Truesec API credentials" -KeePassDB "C:\Temp\Database.kdbx"
 
 # If you've installed KeePass in a different location than the default one (C:\Program Files\KeePass Password Safe 2\KeePass.exe), you can provide that path with the KeePassPath parameter
-Connect-TSAPI -APIKeyName "Truesec API credentials" -KeePassPath "C:\Somewhere\else\KeePass.exe" -KeePassDB "C:\Temp\Database.kdbx"
+Connect-TruesecAPI -APIKeyName "Truesec API credentials" -KeePassPath "C:\Somewhere\else\KeePass.exe" -KeePassDB "C:\Temp\Database.kdbx"
 
 # You will be prompted for a password to the database file.
 ```

@@ -1,10 +1,3 @@
----
-external help file: Truesec.API-help.xml
-Module Name: Truesec.API
-online version:
-schema: 2.0.0
----
-
 # Connect-TruesecAPI
 
 ## SYNOPSIS
