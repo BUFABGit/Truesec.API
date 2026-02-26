@@ -82,8 +82,8 @@ Get-AccessToken
 			try {
 				$SettingsPath = $TruesecSettings.SettingsPath
 				Clear-Variable -Name TruesecSettings -Scope Global -Force -ErrorAction Stop
-				$TruesecSettings = Get-Content -Path $SettingsPath | ConvertFrom-Json
-				$TruesecSettings | Add-Member -MemberType NoteProperty -Name SettingsPath -Value $SettingsPath
+				$Global:TruesecSettings = Get-Content -Path $SettingsPath | ConvertFrom-Json
+				$Global:TruesecSettings | Add-Member -MemberType NoteProperty -Name SettingsPath -Value $SettingsPath
 			}
 			catch {
 				Write-Error $_.Exception.Message
