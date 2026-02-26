@@ -62,11 +62,11 @@ Get-AccessToken
 	)
 	
 	begin {
-		if (-not ($TruesecSettings.WorkspaceConfigured)) {
+		if (-not ($TruesecSettings.Session.WorkspaceConfigured)) {
 			throw "Workspace has not been configured yet, no need to reset."
 		}
 		if (Confirm-NeedNewAccessToken) {
-			Get-AccessToken -APICredentials $APICredentials
+			Get-AccessToken -APICredentials $TruesecSettings.Session.ApiCredentials
 		}
 	}
 
