@@ -125,7 +125,7 @@ Get-QueryString
 	
 	begin {
 		if (-not ($TruesecSettings.Session.WorkspaceConfigured)) {
-			throw "Workspace has not yet been configured. Please run ""Initialize-TSWorkspace"" to properly configure your environment."
+			throw "Workspace has not yet been configured. Please run ""Set-TSWorkspace"" to properly configure your environment."
 		}
 		# Check to see if there exists an active access token.
 		if (Confirm-NeedNewAccessToken) {

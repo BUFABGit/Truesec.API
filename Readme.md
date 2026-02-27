@@ -88,13 +88,13 @@ Connect-TruesecAPI -APIKeyName "Truesec API credentials" -KeePassPath "C:\Somewh
 Once you're connected and have maintained an access token, it's time to set the workspace.
 ```powershell
 # If you only have one workspace
-Get-TSWorkspace | Initialize-TSWorkspace
+Get-TSWorkspace | Set-TSWorkspace
 
 # If you have multiple workspaces and want to connect to a specific one using name
-Get-TSWorkspace -WorkspaceName "YourWorkspaceName" | Initialize-TSWorkspace
+Get-TSWorkspace -WorkspaceName "YourWorkspaceName" | Set-TSWorkspace
 
 # If you know the id of the workspace you want to connect to
-Initialize-TSWorkspace -Id "b65798f1-38a0-4b22-b637-22bbd6929704"
+Set-TSWorkspace -Id "b65798f1-38a0-4b22-b637-22bbd6929704"
 ```
 
 Once the workspace is initialized, you're ready to start using the other cmdlets!

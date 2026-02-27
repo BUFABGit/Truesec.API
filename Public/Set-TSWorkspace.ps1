@@ -1,10 +1,10 @@
-function Initialize-TSWorkspace {
+function Set-TSWorkspace {
 <#
 .SYNOPSIS
 Initializes the Truesec workspace context by selecting and configuring a specific workspace.
 
 .DESCRIPTION
-Initialize-TSWorkspace retrieves the list of available workspaces from the Truesec API and configures
+Set-TSWorkspace retrieves the list of available workspaces from the Truesec API and configures
 the current PowerShell session to use the workspace matching the provided **Id** parameter.
 
 The cmdlet ensures that valid API authentication exists before performing the workspace lookup:
@@ -28,7 +28,7 @@ Mandatory.
 
 .INPUTS
 System.String
-You can pipe objects that contain an 'Id' property to Initialize-TSWorkspace.
+You can pipe objects that contain an 'Id' property to Set-TSWorkspace.
 
 .OUTPUTS
 None by default.
@@ -36,12 +36,12 @@ If successful, updates global Truesec session and endpoint state.
 If the workspace cannot be found or retrieved, an exception is thrown.
 
 .EXAMPLE
-PS> Initialize-TSWorkspace -Id "abc123"
+PS> Set-TSWorkspace -Id "abc123"
 Retrieves all workspaces, selects the workspace with id "abc123", injects the id into all endpoint URLs,
 and marks the session as configured.
 
 .EXAMPLE
-PS> Initialize-TSWorkspace -Id "prod-primary"
+PS> Set-TSWorkspace -Id "prod-primary"
 Initializes the session using the workspace whose id matches "prod-primary".
 If the workspace is already configured, a message explaining this is returned.
 

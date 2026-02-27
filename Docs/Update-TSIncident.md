@@ -19,7 +19,7 @@ The cmdlet allows updating:
 
 The cmdlet requires:
 1.
-A configured workspace (via Initialize-TSWorkspace).
+A configured workspace (via Set-TSWorkspace).
 2.
 A valid access token.
 If the token is missing or expired,
@@ -139,7 +139,7 @@ Security:
 
 ## RELATED LINKS
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()
 
 [Confirm-NeedNewAccessToken]()
 

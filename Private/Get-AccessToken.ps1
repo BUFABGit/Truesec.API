@@ -63,7 +63,7 @@ Related configuration fields:
 .LINK
 Confirm-NeedNewAccessToken
 .LINK
-Initialize-TSWorkspace
+Set-TSWorkspace
 #>
 	[CmdletBinding()]
 	param (

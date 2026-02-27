@@ -172,4 +172,4 @@ Security:
 
 [Get-AccessToken]()
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()

@@ -16,7 +16,7 @@ to acknowledge a specific threat event and optionally attach a descriptive messa
 
 The cmdlet requires:
 1.
-A configured workspace (via Initialize-TSWorkspace)
+A configured workspace (via Set-TSWorkspace)
 2.
 A valid access token.
 If missing or expired, it is automatically refreshed through Get-AccessToken.
@@ -112,7 +112,7 @@ Security:
 
 ## RELATED LINKS
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()
 
 [Confirm-NeedNewAccessToken]()
 

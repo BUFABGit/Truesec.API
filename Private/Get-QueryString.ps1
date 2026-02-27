@@ -76,7 +76,7 @@ Get-TSIncident
 .LINK
 Get-TSThreatEvent
 .LINK
-Initialize-TSWorkspace
+Set-TSWorkspace
 #>
 	[CmdletBinding()]
 	param (

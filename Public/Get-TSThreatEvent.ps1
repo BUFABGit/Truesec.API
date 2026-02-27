@@ -9,7 +9,7 @@ Get-TSThreatEvent queries the Truesec Threat Event API and returns either:
 - A collection of threat events using pagination and sorting options.
 
 Before execution, the cmdlet ensures that:
-1. The workspace has been initialized via Initialize-TSWorkspace.
+1. The workspace has been initialized via Set-TSWorkspace.
 2. A valid access token exists, refreshing it automatically if required.
 
 When retrieving all threat events using the **All** parameter set, the cmdlet supports pagination and sorting.
@@ -56,11 +56,11 @@ Retrieves a paginated, sorted list of Threat Events.
 
 .NOTES
 Author: Bufab Global IT, Cybersecurity department
-Requires a configured workspace (Initialize-TSWorkspace).
+Requires a configured workspace (Set-TSWorkspace).
 Access tokens are automatically refreshed when needed.
 
 .LINK
-Initialize-TSWorkspace
+Set-TSWorkspace
 .LINK
 Confirm-NeedNewAccessToken
 .LINK
@@ -95,7 +95,7 @@ Get-QueryString
     begin {
         # Ensure the workspace is configured
 		if (-not ($TruesecSettings.Session.WorkspaceConfigured)) {
-			throw "Workspace has not yet been configured. Please run ""Initialize-TSWorkspace"" to properly configure your environment."
+			throw "Workspace has not yet been configured. Please run ""Set-TSWorkspace"" to properly configure your environment."
 		}
 
 		# Acquire a new access token if needed

@@ -22,7 +22,7 @@ The cmdlet supports two modes of operation:
 - Retrieving a single incident by **Id**, or
 - Retrieving multiple incidents using paging, filtering, and ordering options.
 
-Before execution, the cmdlet verifies that the workspace environment is properly initialized via Initialize-TSWorkspace.
+Before execution, the cmdlet verifies that the workspace environment is properly initialized via Set-TSWorkspace.
 If the current session does not have a valid access token, one is automatically acquired.
 
 ## EXAMPLES
@@ -197,12 +197,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### If an error occurs, the cmdlet may return the constructed REST invocation parameters for troubleshooting.
 ## NOTES
 Author: Bufab Global IT, Cybersecurity department  
-This cmdlet requires that Initialize-TSWorkspace has been executed beforehand.
+This cmdlet requires that Set-TSWorkspace has been executed beforehand.
 Access tokens are automatically refreshed as required.
 
 ## RELATED LINKS
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()
 
 [Confirm-NeedNewAccessToken]()
 

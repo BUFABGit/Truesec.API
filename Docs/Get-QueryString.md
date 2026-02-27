@@ -139,4 +139,4 @@ Security:
 
 [Get-TSThreatEvent]()
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()

@@ -9,7 +9,7 @@ The cmdlet supports two modes of operation:
 - Retrieving a single incident by **Id**, or
 - Retrieving multiple incidents using paging, filtering, and ordering options.
 
-Before execution, the cmdlet verifies that the workspace environment is properly initialized via Initialize-TSWorkspace.
+Before execution, the cmdlet verifies that the workspace environment is properly initialized via Set-TSWorkspace.
 If the current session does not have a valid access token, one is automatically acquired.
 
 .PARAMETER Id
@@ -72,11 +72,11 @@ Retrieves a filtered, sorted, and paginated list of incidents from the workspace
 
 .NOTES
 Author: Bufab Global IT, Cybersecurity department  
-This cmdlet requires that Initialize-TSWorkspace has been executed beforehand.
+This cmdlet requires that Set-TSWorkspace has been executed beforehand.
 Access tokens are automatically refreshed as required.
 
 .LINK
-Initialize-TSWorkspace
+Set-TSWorkspace
 .LINK
 Confirm-NeedNewAccessToken
 .LINK
@@ -124,7 +124,7 @@ Get-QueryString
 	begin {
 		# Ensure the workspace is configured
 		if (-not ($TruesecSettings.Session.WorkspaceConfigured)) {
-			throw "Workspace has not yet been configured. Please run ""Initialize-TSWorkspace"" to properly configure your environment."
+			throw "Workspace has not yet been configured. Please run ""Set-TSWorkspace"" to properly configure your environment."
 		}
 
 		# Acquire a new access token if needed

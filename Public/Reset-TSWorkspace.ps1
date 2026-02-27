@@ -21,7 +21,7 @@ The cmdlet performs the following steps:
    - Aborts the operation and writes a cancellation message.
 
 Resetting the workspace does **not** remove stored API credentials, but it does require the
-session to reinitialize the workspace using Initialize-TSWorkspace.
+session to reinitialize the workspace using Set-TSWorkspace.
 
 .INPUTS
 None. This cmdlet does not accept pipeline input.
@@ -50,7 +50,7 @@ Security:
 - Access tokens are handled using the standard Bearer authorization header format.
 
 .LINK
-Initialize-TSWorkspace
+Set-TSWorkspace
 .LINK
 Confirm-NeedNewAccessToken
 .LINK

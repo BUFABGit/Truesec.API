@@ -10,7 +10,7 @@ Truesec Incident API. The cmdlet allows updating:
 - A **comment** describing the update.
 
 The cmdlet requires:
-1. A configured workspace (via Initialize-TSWorkspace).
+1. A configured workspace (via Set-TSWorkspace).
 2. A valid access token. If the token is missing or expired,
    it is automatically refreshed using Get-AccessToken.
 
@@ -63,7 +63,7 @@ Security:
 - Authentication is performed using a Bearer token in the Authorization header.
 
 .LINK
-Initialize-TSWorkspace
+Set-TSWorkspace
 .LINK
 Confirm-NeedNewAccessToken
 .LINK
@@ -103,7 +103,7 @@ Get-AccessToken
 	
 	begin {
 		if (-not ($TruesecSettings.Session.WorkspaceConfigured)) {
-			throw "Workspace has not yet been configured. Please run ""Initialize-TSWorkspace"" to properly configure your environment."
+			throw "Workspace has not yet been configured. Please run ""Set-TSWorkspace"" to properly configure your environment."
 		}
 		if (Confirm-NeedNewAccessToken) {
 			Get-AccessToken -APICredentials $TruesecSettings.Session.ApiCredentials

@@ -71,7 +71,7 @@ Security:
 .LINK
 Get-AccessToken
 .LINK
-Initialize-TSWorkspace
+Set-TSWorkspace
 #>
 	[CmdletBinding()]
 	param (

@@ -111,5 +111,5 @@ Related configuration fields:
 
 [Confirm-NeedNewAccessToken]()
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()
 

@@ -34,7 +34,7 @@ If the user declines:
    - Aborts the operation and writes a cancellation message.
 
 Resetting the workspace does **not** remove stored API credentials, but it does require the
-session to reinitialize the workspace using Initialize-TSWorkspace.
+session to reinitialize the workspace using Set-TSWorkspace.
 
 ## EXAMPLES
 
@@ -90,7 +90,7 @@ Security:
 
 ## RELATED LINKS
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()
 
 [Confirm-NeedNewAccessToken]()
 

@@ -84,5 +84,5 @@ A new access token is automatically retrieved when necessary.
 
 [Get-AccessToken]()
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()
 

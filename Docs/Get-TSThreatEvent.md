@@ -23,7 +23,7 @@ Get-TSThreatEvent queries the Truesec Threat Event API and returns either:
 
 Before execution, the cmdlet ensures that:
 1.
-The workspace has been initialized via Initialize-TSWorkspace.
+The workspace has been initialized via Set-TSWorkspace.
 2.
 A valid access token exists, refreshing it automatically if required.
 
@@ -158,12 +158,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### If an error occurs, the cmdlet returns the REST invocation parameters to assist with troubleshooting.
 ## NOTES
 Author: Bufab Global IT, Cybersecurity department
-Requires a configured workspace (Initialize-TSWorkspace).
+Requires a configured workspace (Set-TSWorkspace).
 Access tokens are automatically refreshed when needed.
 
 ## RELATED LINKS
 
-[Initialize-TSWorkspace]()
+[Set-TSWorkspace]()
 
 [Confirm-NeedNewAccessToken]()
 
