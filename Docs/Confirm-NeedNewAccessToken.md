@@ -81,7 +81,7 @@ Security:
 
 ## RELATED LINKS
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 
-[Set-TSWorkspace]()
+[Set-TSWorkspace](Set-TSWorkspace.md)
 
