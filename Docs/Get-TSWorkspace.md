@@ -80,7 +80,7 @@ A new access token is automatically retrieved when necessary.
 
 ## RELATED LINKS
 
-[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken)
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken.md)
 
 [Get-AccessToken](Get-AccessToken.md)
 
