@@ -133,10 +133,10 @@ Security:
 
 ## RELATED LINKS
 
-[Get-TSCyberExposureProfile]()
+[Get-TSCyberExposureProfile](Get-TSCyberExposureProfile.md)
 
-[Get-TSIncident]()
+[Get-TSIncident](Get-TSIncident.md)
 
-[Get-TSThreatEvent]()
+[Get-TSThreatEvent](Get-TSThreatEvent.md)
 
-[Set-TSWorkspace]()
+[Set-TSWorkspace](Set-TSWorkspace.md)

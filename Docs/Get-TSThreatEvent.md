@@ -163,11 +163,11 @@ Access tokens are automatically refreshed when needed.
 
 ## RELATED LINKS
 
-[Set-TSWorkspace]()
+[Set-TSWorkspace](Set-TSWorkspace.md)
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken.md)
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 
-[Get-QueryString]()
+[Get-QueryString](Get-QueryString.md)
 

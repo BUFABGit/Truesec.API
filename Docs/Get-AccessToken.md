@@ -109,7 +109,7 @@ Related configuration fields:
 
 ## RELATED LINKS
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken.md)
 
-[Set-TSWorkspace]()
+[Set-TSWorkspace](Set-TSWorkspace.md)
 

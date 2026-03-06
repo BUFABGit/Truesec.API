@@ -115,10 +115,10 @@ Security:
 
 ## RELATED LINKS
 
-[Reset-Workspace]()
+[Reset-Workspace](Reset-TSWorkspace.md)
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken.md)
 
-[Get-TSWorkspace]()
+[Get-TSWorkspace](Get-TSWorkspace.md)

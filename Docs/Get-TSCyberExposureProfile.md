@@ -174,11 +174,11 @@ An access token is automatically refreshed if required.
 
 ## RELATED LINKS
 
-[Initialize-Workspace]()
+[Initialize-Workspace](Initialize-Workspace.md)
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken.md)
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 
-[Get-QueryString]()
+[Get-QueryString](Get-QueryString.md)
 

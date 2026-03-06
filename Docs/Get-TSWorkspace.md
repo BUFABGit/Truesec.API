@@ -80,9 +80,9 @@ A new access token is automatically retrieved when necessary.
 
 ## RELATED LINKS
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken)
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 
-[Set-TSWorkspace]()
+[Set-TSWorkspace](Set-TSWorkspace.md)
 

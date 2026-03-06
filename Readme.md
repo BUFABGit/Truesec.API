@@ -15,16 +15,13 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-The Truesec.API PowerShell module grew out of a simple goal: make it easier, cleaner, and safer to work with Truesec’s REST APIs without constantly rebuilding the same pieces. It takes care of the repetitive parts, authentication, request handling and consistent patterns.
-The project began as a way to support Bufab’s internal cybersecurity and automation work and is now being shared publicly to contribute back to the community. Although it’s currently maintained solely by Bufab, the intention is to support openness and collaboration, because sharing really is caring. And as new API features become available, they’ll be added to the module when time allows.
-
+At Bufab Global IT, we’ve learned and grown thanks to the open‑source community and its spirit of sharing is caring. If this project helps you in any way, then we’re happy to return the favor and give back. 😊
 
 ### Built With
 
 * [Powershell](https://docs.microsoft.com/en-us/powershell/)
 * [VSCode](https://code.visualstudio.com/)
 * [Truesec Portal API](https://api.soc.truesec.app/index.html)
-
 
 
 <!-- GETTING STARTED -->

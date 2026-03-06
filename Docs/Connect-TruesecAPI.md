@@ -176,9 +176,9 @@ The cmdlet throws if PS major version \> 5.
 
 ## RELATED LINKS
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 
-[Get-ApiKey]()
+[Get-ApiKey](Get-ApiKey.md)
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken.md)
 

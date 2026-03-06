@@ -112,9 +112,9 @@ Security:
 
 ## RELATED LINKS
 
-[Set-TSWorkspace]()
+[Set-TSWorkspace](Set-TSWorkspace.md)
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken.md)
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 

@@ -202,11 +202,11 @@ Access tokens are automatically refreshed as required.
 
 ## RELATED LINKS
 
-[Set-TSWorkspace]()
+[Set-TSWorkspace](Set-TSWorkspace)
 
-[Confirm-NeedNewAccessToken]()
+[Confirm-NeedNewAccessToken](Confirm-NeedNewAccessToken)
 
-[Get-AccessToken]()
+[Get-AccessToken](Get-AccessToken.md)
 
-[Get-QueryString]()
+[Get-QueryString](Get-QueryString.md)
 
