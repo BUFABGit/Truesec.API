@@ -112,11 +112,6 @@ Get-AccessToken
 		if ($Result) {
 			return $Result
 		}
-        <# For debugging
-		else {
-			return $InvokeParams
-		}
-        #>
 	}
 }
 # End function.

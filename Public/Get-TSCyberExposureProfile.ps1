@@ -150,22 +150,13 @@ Get-QueryString
 			$Result = Invoke-RestMethod @InvokeParams
 		}
 		catch {
-			Write-Error $_.Exception.Message
-			<# Debugging
-			$Result = $InvokeParams
-			#>
+			# Never output $InvokeParams: it holds the bearer token. Throw a cleaned error instead.
+			throw (Format-TSRequestError -ErrorRecord $_ -Method $InvokeParams.Method -Uri $InvokeParams.Uri)
 		}
 	}
 	
 	end {
-		# return $InvokeParams
-		if ($Result) {
-			return $Result
-		}
-		else {
-			return $InvokeParams
-			Write-Output "Failed to retrieve incident(s)."
-		}
+		return $Result
 	}
 }
 # End function.

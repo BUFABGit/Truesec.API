@@ -1,5 +1,5 @@
 $ModuleRoot = $PSScriptRoot
-$Settings   = "$($ModuleRoot)\Resources\Settings.json"
+$Settings   = Join-Path -Path $ModuleRoot -ChildPath (Join-Path -Path 'Resources' -ChildPath 'Settings.json')
 
 try {
     Get-Variable -Name TruesecSettings -Scope Script -ErrorAction Stop
@@ -9,8 +9,8 @@ catch {
     $SettingsExist = $false
 }
 
-$Private = @(Get-ChildItem -Path $ModuleRoot\Private\*.ps1 -ErrorAction SilentlyContinue)
-$Public  = @(Get-ChildItem -Path $ModuleRoot\Public\*.ps1 -ErrorAction SilentlyContinue)
+$Private = @(Get-ChildItem -Path (Join-Path -Path $ModuleRoot -ChildPath 'Private') -Filter *.ps1 -ErrorAction SilentlyContinue)
+$Public  = @(Get-ChildItem -Path (Join-Path -Path $ModuleRoot -ChildPath 'Public') -Filter *.ps1 -ErrorAction SilentlyContinue)
 
 foreach ($Import in @($Private + $Public)) {
     try {
@@ -29,7 +29,7 @@ if (-not ($SettingsExist)) {
     $SettingsExist  = $true
 }
 else {
-    Write-Output "Settings variable found, reusing current."
+    Write-Verbose "Settings variable found, reusing current."
 }
 
 Export-ModuleMember -Function $Public.Basename

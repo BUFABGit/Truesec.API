@@ -130,7 +130,7 @@ Set-TSWorkspace
 						}
 					}
 					PageNumber {"PageNumber=$PageNumber"}
-					PageSize {"PageSize=$PageSize"}
+					PageSize {"pageSize=$PageSize"}
 					OrderBy {
 						if ($OrderDirection) {
 							switch ($OrderDirection) {
