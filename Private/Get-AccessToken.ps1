@@ -109,8 +109,9 @@ Set-TSWorkspace
 				$ResponseOK = $true
 			}
 			catch {
-				# Handle errors during the request
-				Write-Error $_.Exception.Message
+				# Keep this request's own error (not $Error[0], which can be an older one). The body held the secret,
+				# so only the status and message are kept.
+				$TokenError = Format-TSRequestError -ErrorRecord $_ -Method 'Post' -Uri $Script:TruesecSettings.Endpoints.AuthUri
 				$ResponseOK = $false
 			}
 		}
@@ -137,13 +138,13 @@ Set-TSWorkspace
 					}
 				}
 				False {
-					throw $Error[0]
+					throw $TokenError
 				}
 			}
 		}
 		else {
 			# Output if the current token is still valid
-			Write-Output "Current token still active."
+			Write-Verbose "Current token still active."
 		}
 	}
 }

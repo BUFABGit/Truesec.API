@@ -119,7 +119,7 @@ Get-TSWorkspace
 			else {
 				if (-not $Script:TruesecSettings.Session.WorkspaceConfigured) {
 					$Placeholder = @{
-						"{workspaceId}" = "$($Workspace[0].id)"
+						"{workspaceId}" = "$($SelectedId.id)"
 					}
 
 					$Script:TruesecSettings.Endpoints | ForEach-Object {
@@ -133,8 +133,8 @@ Get-TSWorkspace
 					$Script:TruesecSettings.Session.WorkspaceConfigured = $true
 				}
 				else {
-					Write-Output "Workspace already configured."
-					Write-Output "If you want to connect to another workspace, please run ""Reset-Workspace"" first"
+					Write-Verbose "Workspace already configured."
+					Write-Verbose "If you want to connect to another workspace, please run ""Reset-TSWorkspace"" first"
 				}
 			}
 		}

@@ -116,3 +116,17 @@ Get-Help -Name Get-TSIncident -Examples
 Get-Help -Name Get-TSThreatEvent -Full
 ```
 For more detailed information and examples around using the modules functions, please see [/Docs](/Docs/)
+## Changes
+
+### 1.1.0 (2026-10-19)
+- **Breaking:** `Get-TSIncident`, `Get-TSThreatEvent` and `Get-TSCyberExposureProfile` now **throw** when a request
+  fails, with a cleaned message (`Truesec API request failed: GET /workspaces/.../incidents (HTTP 403). ...`).
+  Before, they wrote an error and returned the request parameters, which included the `Authorization` header with
+  the bearer token in plain text. Catch the exception (`try { ... } catch { ... }`) where you handled the old output.
+- The module loads on Linux (paths built with `Join-Path`), so it can run in Azure Functions.
+- `Set-TSWorkspace` configures the requested workspace (it used the first one returned).
+- The token request throws its own error (not `$Error[0]`), without the client secret.
+- Status messages ("Current token still active.", "Workspace already configured.") go to the verbose stream instead of
+  the output.
+- `Get-QueryString` sends `pageSize` in lower camel case.
+- Pester tests: `Invoke-Pester ./Tests/Truesec.API.Tests.ps1`.
